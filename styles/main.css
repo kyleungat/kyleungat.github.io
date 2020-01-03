@@ -12,7 +12,6 @@ header h1 {
 
 header p{
     font-size: 2rem;
-    font-family: fantasy;
 }
 
 article {
@@ -119,7 +118,6 @@ article .skill-container ul li{
 }
 
 .timeline .experience-item p {
-    font-family: fantasy;
     line-height: 2em;
 }
 
@@ -175,7 +173,6 @@ article .skill-container ul li{
 
 .contact-card .introduction{
     text-align: left;
-    font-family: fantasy;
     font-size: 2rem;
     word-spacing: 0.3rem;
     padding: 20px;

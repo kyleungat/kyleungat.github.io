@@ -48,3 +48,6 @@ nav li a.active{
     border-bottom: solid 5px #0c8be0;
 }
 
+.detail {
+    font-family: 'Vollkorn', serif;
+}
