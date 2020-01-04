@@ -118,7 +118,8 @@ article .skill-container ul li{
 }
 
 .timeline .experience-item p {
-    line-height: 2em;
+    margin: 0;
+    padding: 20px;
 }
 
 /* timeline content odd arrow*/
