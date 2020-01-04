@@ -19,32 +19,71 @@ article {
     text-align: center;
 }
 
+.left{
+    text-align: left;
+}
 
+.right{
+    text-align: right;
+}
 
 article h2 {
     font-size: 3rem;
 }
 
-
+/* Professionals */
 article .skill-container {
     background-color: #43a8ec;
+    width: 80%;
     font-size: 2rem;
-    /* word-spacing: 5px; */
     border-radius: 5px;
     box-shadow: 0 5px 10px 2px #807c7cce;
     color: #ffffff;
     margin: auto;
-    padding: 30px;
+    padding: 20px 0;
 }
 
 article .skill-container ul{
     list-style-type: none;
-}
-article .skill-container ul li{
-    word-spacing: 20px;
-    margin: 1em;
+    padding: 0;
 }
 
+article .skill-container ul li{
+    margin: 30px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+
+article progress{
+    -webkit-appearance: none;
+    position: relative;
+    width: 40%;
+}
+
+article .skill-container span{
+    width: 30%;
+    padding: 0 15px;
+}
+
+
+article progress::-webkit-progress-bar{
+    background-color: transparent;
+    height: 30%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+
+
+}
+
+article progress::-webkit-progress-value{
+    background-image: linear-gradient(90deg, #87f572, #ebfca0);
+    border-radius: 20px;
+}
+
+/* Portfolio */
 .portfolio .portfolio-item {
     display: flex;
     flex-wrap: wrap;
@@ -118,7 +157,8 @@ article .skill-container ul li{
 }
 
 .timeline .experience-item p {
-    line-height: 2em;
+    margin: 0;
+    padding: 20px;
 }
 
 /* timeline content odd arrow*/
@@ -160,10 +200,13 @@ article .skill-container ul li{
 
 /* Contact */
 .contact-card {
-    height: 300px;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1rem;
     background-color: #43a8ec;
     box-shadow: 0 5px 10px 2px #807c7cce;
     display: grid;
+    align-items: center;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     grid-template-areas:
@@ -172,19 +215,14 @@ article .skill-container ul li{
 }
 
 .contact-card .introduction{
-    text-align: left;
-    font-size: 2rem;
-    word-spacing: 0.3rem;
-    padding: 20px;
     grid-area: introduction;
+    padding: 0 10%;
     border-right: 1px solid #9ed4f8;
 }
 
 .contact-card .information{
-    font-size: 1.5rem;
     grid-area: information;
     color: #ffffff;
-    padding: 15px;
 }
 
 .contact-card .information ul{
@@ -194,7 +232,7 @@ article .skill-container ul li{
 }
 
 .contact-card .information ul li{
-    margin-top: 20px;
+    line-height: 2;
 }
 
 
@@ -211,7 +249,6 @@ article .skill-container ul li{
     font-size: 2rem;
     padding: 20px;
     border-radius: 5px;
-    margin-top: 10px;
     animation: glowing2 0.8s infinite ;
 }
 
