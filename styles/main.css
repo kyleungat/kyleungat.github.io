@@ -19,7 +19,13 @@ article {
     text-align: center;
 }
 
+.left{
+    text-align: left;
+}
 
+.right{
+    text-align: right;
+}
 
 article h2 {
     font-size: 3rem;
@@ -28,26 +34,37 @@ article h2 {
 /* Professionals */
 article .skill-container {
     background-color: #43a8ec;
+    width: 80%;
     font-size: 2rem;
-    /* word-spacing: 5px; */
     border-radius: 5px;
     box-shadow: 0 5px 10px 2px #807c7cce;
     color: #ffffff;
     margin: auto;
-    padding: 30px;
+    padding: 20px 0;
 }
 
 article .skill-container ul{
     list-style-type: none;
+    padding: 0;
 }
-/* article .skill-container ul li{
 
-} */
+article .skill-container ul li{
+    margin: 30px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
 
 
 article progress{
     -webkit-appearance: none;
     position: relative;
+    width: 40%;
+}
+
+article .skill-container span{
+    width: 30%;
+    padding: 0 15px;
 }
 
 
