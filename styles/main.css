@@ -161,10 +161,13 @@ article .skill-container ul li{
 
 /* Contact */
 .contact-card {
-    height: 300px;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1rem;
     background-color: #43a8ec;
     box-shadow: 0 5px 10px 2px #807c7cce;
     display: grid;
+    align-items: center;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     grid-template-areas:
@@ -173,19 +176,14 @@ article .skill-container ul li{
 }
 
 .contact-card .introduction{
-    text-align: left;
-    font-size: 2rem;
-    word-spacing: 0.3rem;
-    padding: 20px;
     grid-area: introduction;
+    padding: 0 10%;
     border-right: 1px solid #9ed4f8;
 }
 
 .contact-card .information{
-    font-size: 1.5rem;
     grid-area: information;
     color: #ffffff;
-    padding: 15px;
 }
 
 .contact-card .information ul{
@@ -195,7 +193,7 @@ article .skill-container ul li{
 }
 
 .contact-card .information ul li{
-    margin-top: 20px;
+    line-height: 2;
 }
 
 
@@ -212,7 +210,6 @@ article .skill-container ul li{
     font-size: 2rem;
     padding: 20px;
     border-radius: 5px;
-    margin-top: 10px;
     animation: glowing2 0.8s infinite ;
 }
 
