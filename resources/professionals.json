@@ -1,0 +1,22 @@
+[
+    {
+        "name" :"HTML5",
+        "progress" :80
+    },
+    {
+        "name" :"CSS3",
+        "progress" :90
+    },
+    {
+        "name" :"JavaScript",
+        "progress" :50
+    },
+    {
+        "name" :"HTTP",
+        "progress" :80
+    },
+    {
+        "name" :"jQuery",
+        "progress" :60
+    }
+]
