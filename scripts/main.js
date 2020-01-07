@@ -28,7 +28,22 @@ function createProfessionals(){
     xhr.send();
 }
 
+function fadeIn(){
+    const skill = document.querySelector(".skill-container");
+    const portfolio = document.querySelector(".portfolio-item");
+    const timeline = document.querySelector(".timeline");
+    const experience = document.querySelectorAll(".experience-container");
+    const contact = document.querySelector(".contact-card");
+    if( window.pageYOffset + document.documentElement.clientHeight >= skill.offsetTop && document.documentElement.clientHeight < skill.offsetTop) skill.classList.add("visible");
+    if( window.pageYOffset + document.documentElement.clientHeight >= portfolio.offsetTop && document.documentElement.clientHeight < portfolio.offsetTop) portfolio.classList.add("visible");
+    for (let i = 0; i < experience.length; i++){
+        console.log(experience[i].offsetParent);
+        if( window.pageYOffset + document.documentElement.clientHeight >= experience[i].offsetTop + timeline.offsetTop) experience[i].classList.add("visible");
+    }
+    if( window.pageYOffset + document.documentElement.clientHeight >= contact.offsetTop ) contact.classList.add("visible");
+    // portfolio
+}
 
 window.onload = createProfessionals;
-
+window.addEventListener("scroll", fadeIn );
 
