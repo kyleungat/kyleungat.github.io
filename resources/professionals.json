@@ -9,7 +9,7 @@
     },
     {
         "name" :"JavaScript",
-        "progress" :50
+        "progress" :60
     },
     {
         "name" :"HTTP",
@@ -17,6 +17,10 @@
     },
     {
         "name" :"jQuery",
+        "progress" :60
+    },
+    {
+        "name" :"Git",
         "progress" :60
     }
 ]
