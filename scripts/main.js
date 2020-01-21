@@ -37,7 +37,6 @@ function fadeIn(){
     if( window.pageYOffset + document.documentElement.clientHeight >= skill.offsetTop && document.documentElement.clientHeight < skill.offsetTop) skill.classList.add("visible");
     if( window.pageYOffset + document.documentElement.clientHeight >= portfolio.offsetTop && document.documentElement.clientHeight < portfolio.offsetTop) portfolio.classList.add("visible");
     for (let i = 0; i < experience.length; i++){
-        console.log(experience[i].offsetParent);
         if( window.pageYOffset + document.documentElement.clientHeight >= experience[i].offsetTop + timeline.offsetTop) experience[i].classList.add("visible");
     }
     if( window.pageYOffset + document.documentElement.clientHeight >= contact.offsetTop ) contact.classList.add("visible");
