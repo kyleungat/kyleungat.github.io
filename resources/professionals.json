@@ -38,5 +38,9 @@
     {
         "name" :"Webpack",
         "progress" :50
+    },
+    {
+        "name" :"Sass",
+        "progress" :80
     }
 ]
