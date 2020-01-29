@@ -9,7 +9,7 @@
     },
     {
         "name" :"JavaScript",
-        "progress" :60
+        "progress" :70
     },
     {
         "name" :"HTTP",
@@ -22,5 +22,21 @@
     {
         "name" :"Git",
         "progress" :60
+    },
+    {
+        "name" :"BootStrap",
+        "progress" :60
+    },
+    {
+        "name" :"ReactJS",
+        "progress" :50
+    },
+    {
+        "name" :"npm",
+        "progress" :50
+    },
+    {
+        "name" :"Webpack",
+        "progress" :50
     }
 ]
