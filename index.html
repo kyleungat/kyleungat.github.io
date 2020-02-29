@@ -1,139 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Anthony Leung">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Main Page</title>
-    <link rel="stylesheet" type="text/css" href="styles/layout.css">
+    <!-- <link rel="stylesheet" type="text/css" href="styles/layout.css"> -->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn|Trade+Winds|Caveat+Brush&display=swap"
+        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
 </head>
+
 <body>
     <nav>
         <a><img src="resources/img/logo.png"></a>
+        <button type="button" id="hamburger"><i class="fas fa-bars"></i></button>
         <ul>
-            <li><a class="active">About</a></li>
-            <li><a>Professionals</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Experience</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#knowledge">Knowledge</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <header>
         <h1>Front-End Developer</h1>
-        <p class="detail">"Get your act together."</p>
+        <!-- <p class="detail">"Get your act together."</p> -->
+        <p>Anthony Leung</p>
+        <a href="/resources/cv.pdf" class="cv" download><i class="fas fa-download"></i> download cv</a>
+        <a href="https://github.com/kyleungat" target="_blank" class="github"><i class="fab fa-github"></i> github</a>
+        <a class="direct" href="#introduction"><i class="fas fa-arrow-down"></i></a>
     </header>
-    <article class="professionals">
-        <h2>Professionals</h2>
-        <div class="skill-container">
-            <h3>Knowledge in</h3>
-            <ul>
-            </ul>
+    <section class="introduction" id="introduction">
+        <h2>Introduction</h2>
+        <p>
+            I started diving into the front-end after being a Computer Engineering graduate from HKUST as I think
+            front-end is one of
+            the promising industry besides blockchain, AI, data analysis in IT. In the beginning, I learnt
+            the foundamentals of HTML5, CSS3 and JavaScript. Now, I am picking up the frameworks and libraries that a
+            professional
+            front-end developer must familiar to and React is the one I currently pay most attention to. Also, gaining
+            hand-ons experience is my
+            major way to acquire the skills. Below is a portion of my porfolio websites.
+            <!-- responsive, those -->
+        </p>
         </div>
-    </article>
-    <article class="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-item">
-            <div class="project">
-                <div class="project-card">
-                    <div class="project-front">
-                        <img src="resources/img/weather.png">
-                        <h3 class="project-name">Weather</h3>
-                    </div>
-                    <div class="project-back">
-                        <h3>HTML5</h3>
-                        <h3>CSS3</h3>
-                        <h3>JavaScript</h3>
-                        <h3>Ajax</h3>
-                    </div>
-                </div>
-                <a href="https://kyleungat.github.io/weather" target="_blank"></a>
-            </div>
-            <div class="project">
-                <div class="project-card">
-                    <div class="project-front">
-                        <img src="resources/img/commercial1.png">
-                        <h3 class="project-name">Commercial1</h3>
-                    </div>
-                    <div class="project-back">
-                        <h3>HTML5</h3>
-                        <h3>CSS3</h3>
-                        <h3>jQuery</h3>
-                    </div>
-                </div>
-                <a href="https://kyleungat.github.io/commercial1" target="_blank"></a>
-            </div>
-            <div class="project">
-                <div class="project-card">
-                    <div class="project-front">
-                        <img src="resources/img/coming.png">
-                        <h3 class="project-name"><i class="far fa-smile-wink"></i></h3>
-                    </div>
-                    <div class="project-back">
-                    </div>
-                </div>
-            </div>
-           
- 
-        </div>
-    </article>
-    <article class="experience">
-        <h2>Experience</h2>
-        <div class="timeline">
-            <div class="experience-container">
-                <div class="circle"></div>
-                <div class="experience-item detail">
-                    <h3>Graduation</h3>
-                    <p>In 2019, graduate from HKUST with the Computer Engineering deploma.</p>
-                    
-                </div>
-            </div>
-            <div class="experience-container">
-                <div class="circle"></div>
-                <div class="experience-item detail">
-                    <h3>Self-learning</h3>
-                    <p>Learn the front-end knowledge required in industry.</p>
-                    
-                </div>
-            </div>
-            <div class="experience-container">
-                <div class="circle"></div>
-                <div class="experience-item detail">
-                    <h3>First Job</h3>
-                    <p>Not yet.</p>
-                </div>
-            </div>
-            <div class="experience-container">
-                <div class="circle"></div>
-                <div class="experience-item detail">
-                    <h3>Goal</h3>
-                    <p>Be a professional front-end developer.</p>
-                </div>
-            </div>
-        </div>
-    </article>
-    <article class="contactMe">
-        <div class="contact-card">
-            <div class="introduction detail">
-                <p>
-                    Hi, I am seeking my first job as a junior front-end developer. As a good teammate and quick learner, I can contribute to the work 100%. 
+    </section>
+    <section class="portfolio" id="portfolio">
+        <h2>Portfolio Websites</h2>
+        <article class="portfolio-web">
+            <div class="meta-data">
+                <h3>weather</h3>
+                <p>This website fetches data from "openweather.com" and displays the information. There
+                    is a search bar for users to retrieve the weather information of the location entered.
+                    Switching to "detail"tab can view more information. 5 days weather is displayed by the
+                    carousel of weather cards and the location can be viewed in the google map.
                 </p>
+                <p>
+                    The theme changes based on the weather displayed in the main view. Click on different weather
+                    card can change the main view. Also, the temperature in the main view can be toggled between
+                    degree celsius and fahrenheit. It is implemented with the responsive design.
+                </p>
+                <div class="tag-container">
+                    <span class="tag"># react</span>
+                    <span class="tag"># responsive</span>
+                    <span class="tag"># fetch</span>
+                    <span class="tag"># bootstrap</span>
+                    <span class="tag"># modal</span>
+                    <span class="tag"># carousel</span>
+                </div>
+                <a href="https://kyleungat-weather.netlify.com" alt="website address">go to website</a>
             </div>
-            <div class="information">
+            <div class="image-container">
+                <img src="/resources/img/weather.png" alt="weather">
+                <div class="overlay">
+                    <a href="https://kyleungat-weather.netlify.com" alt="website address">website</a>
+                    <a href="https://github.com/kyleungat/weather" alt="github address">github</a>
+                </div>
+            </div>
+        </article>
+        <article class="portfolio-web">
+            <div class="meta-data">
+                <h3>calculator</h3>
+                <p>It mimics the Apple calculator, having funtions based on it.
+                </p>
+                <p>
+                    Users cna manipulate the panel ont only by the mouse, also the keyboard. Press <code>enter</code>
+                    to get the the computed value. You can also toggle the theme between light and drak. It is
+                    implemented
+                    in react and responsive design.
+                </p>
+                <div class="tag-container">
+                    <span class="tag"># react</span>
+                    <span class="tag"># responsive</span>
+                    <span class="tag"># react context</span>
+                </div>
+                <a href="https://kyleungat-calculator.netlify.com" alt="website address">go to website</a>
+            </div>
+            <div class="image-container">
+                <img src="/resources/img/calculator.png" alt="calculator">
+                <div class="overlay">
+                    <a href="https://kyleungat-calculator.netlify.com" alt="website address">website</a>
+                    <a href="https://github.com/kyleungat/calculator" alt="github address">github</a>
+                </div>
+            </div>
+        </article>
+        <article class="portfolio-web">
+            <div class="meta-data">
+                <h3>todo</h3>
+                <p>It provides todo list and file management system. Users can create, edit and delete a folder which
+                    contains a todo list. In the todo list, users can also undo or redo the actions.
+                </p>
+                <p>
+                    It's in responsive design, using the redux and react-redux to manage the data. Undo and Redo
+                    functions
+                    with suitable animations.
+                </p>
+                <div class="tag-container">
+                    <span class="tag"># react</span>
+                    <span class="tag"># responsive</span>
+                    <span class="tag"># redux</span>
+                    <span class="tag"># react-redux</span>
+                    <span class="tag"># CSS transition</span>
+                    <span class="tag"># TransitionGroup</span>
+                </div>
+                <a href="https://kyleungat-todo.netlify.com" alt="website address">go to website</a>
+            </div>
+            <div class="image-container">
+                <img src="/resources/img/todo.png" alt="todo">
+                <div class="overlay">
+                    <a href="https://kyleungat-todo.netlify.com" alt="website address">website</a>
+                    <a href="https://github.com/kyleungat/todo" alt="github address">github</a>
+                </div>
+            </div>
+        </article>
+
+
+        </div>
+    </section>
+    <section class="knowledge" id="knowledge">
+        <h2>Knowledge</h2>
+        <div class="knowledge-container">
+            <div>
+                <h3>general</h3>
                 <ul>
-                    <li>Phone: +852 92235937</li>
-                    <li>Email: kyleungat@connect.ust.hk</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>ES6</li>
+                    <li>Git</li>
+                    <li>Webpack</li>
+                    <li>npm</li>
+                    <li>React</li>
+                    <li>Responsive</li>
+                    <li>HTTP</li>
+                    <li>RESTFUL</li>
+                    <li>Bootstrap</li>
+                    <li>SCSS</li>
                 </ul>
             </div>
-            <div class="contact">
-                <a href="mailto:kyleungat@connect.ust.hk">Contact</a>
+
+            <div>
+                <h3>react related</h3>
+                <ul>
+                    <li>React Router</li>
+                    <li>Redux</li>
+                    <li>React-Redux</li>
+                    <li>React-icon</li>
+                    <li>Redux-thunk</li>
+                    <li>React Transition Group</li>
+                    <li>Styled component</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <section class="contact">
+        <h2>Contact</h2>
+        <button type="button" id="contact">Contact me</button>
+
+    </section>
+    <div class="modal">
+        <div class="modal-content" id="modal-content">
+            <div class="data">
+                <span><i class="fas fa-phone"></i></span>
+                <span>+852 92235937</span>
+            </div>
+            <div class="data">
+                <span><i class="fab fa-whatsapp"></i></span>
+                <span>+852 92235937</span>
+            </div>
+            <div class="data">
+                <span><i class="fas fa-inbox"></i></span>
+                <span>kyleungat@connet.ust.hk</span>
             </div>
 
         </div>
-    </article>
+    </div>
     <footer></footer>
 </body>
-</html>
 
+</html>
