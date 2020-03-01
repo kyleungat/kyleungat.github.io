@@ -1,5 +1,5 @@
 html{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
     font-size: 15px;
     scroll-behavior: smooth;
 }
@@ -18,6 +18,19 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+}
+
+h1{
+    font-family: "Noto Serif", serif;
+}
+
+h2{
+    font-family: "Noto Serif", serif;
+
+}
+
+h3{
+    font-family: "Noto Serif", serif;
 }
 
 nav img{
@@ -177,16 +190,13 @@ section h2 {
 }
 
 .introduction p{
-    font-size: 2em;
+    font-size: 1.5em;
     text-indent: 3em;
     text-align: left;
     column-gap: 10%;
     column-count: 2;
     column-rule: 3px solid #dedede;
-    letter-spacing: 0.05em;
-    word-spacing: 0.2em;
     line-height: 2;
-    font-family: 'Caveat Brush', cursive;
 }
 
 .portfolio-web {
@@ -258,7 +268,8 @@ section h2 {
 .meta-data p{
     padding-right: 2em;
     text-align: justify;
-    line-height: 1.5;
+    line-height: 2;
+    text-indent: 2em;
 }
 
 .meta-data h3{
@@ -478,7 +489,10 @@ section h2 {
     }
     .introduction p{
         column-count: 1;
-        text-align: justify;
+        text-align: left;
+        font-size: 1em;
+        letter-spacing: 0;
+        word-spacing: 0;
     }
     .portfolio-web {
         padding: 30px 5%;
