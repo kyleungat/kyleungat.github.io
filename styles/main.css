@@ -21,7 +21,6 @@ nav {
 }
 
 nav img{
-    float: left;
     height: 70px;
     margin-left: 50px;
 }
@@ -447,6 +446,9 @@ section h2 {
     nav {
         flex-wrap: wrap;
         overflow: hidden;
+    }
+    nav img{
+        margin-left: 5px;
     }
     nav ul {
         display: none;
